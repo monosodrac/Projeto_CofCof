@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+.produto button,
+form button {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: normal;
+}
+
+body, input, textarea {
+    font-family: "Roboto", sans-serif;
+}
+
+
+header {
+    padding: 16px 0;
+    background-color: #822e06;
+    color: #ecf0f1;
+}
+
+header h1 img {
+    height: 1em;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 1em;
+    font-size: 1.1em;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    padding: 8px;
+    border-bottom: 1px solid #822e06;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.store-front {
+    height: 22em;
+    margin-right: 32px;
+}
+
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+    color: #822e06;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.conteudo img {
+    height: 12em;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.conteudo,
+.produto {
+    list-style: none;
+    text-decoration: none;
+    color: #822e06;
+    font-size: 1em;
+}
+
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+.produto button {
+    background-color: #822e06;
+    padding: 0.5em;
+    margin: 1em 0 2em;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+form button {
+    background-color: #822e06;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+form button:hover {
+    background-color: #aa4f11;
+}
+
+input:focus, textarea:focus {
+    outline-color: #822e06;
+}
+
+
+footer {
+    background-color: #822e06;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+
+@media screen and (max-width: 767px) {
+    #about > .container,
+    .conteudo,
+    .produtos {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    #about {
+        display: block;
+    }
+
+    #about img {
+        margin-right: 0;
+        height: 14em;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .conteudo .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+}
