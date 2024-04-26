@@ -63,6 +63,14 @@ section .container {
     margin-right: 32px;
 }
 
+#about h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 1.2em;
+}
 
 section .container {
     align-items: flex-start;
@@ -79,6 +87,11 @@ section h2 {
 
 .conteudo img {
     height: 12em;
+}
+
+.produto h3 {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .produtos {
@@ -127,12 +140,14 @@ form textarea {
 
 .produto button {
     background-color: #822e06;
-    padding: 0.5em;
+    padding: 1em;
     margin: 1em 0 2em;
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 0.5em;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 form button {
@@ -140,7 +155,9 @@ form button {
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 0.5em;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 form button:hover {
